@@ -4,13 +4,16 @@ public class PetSelector{
         //ask the user to input (name, season, and color)
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter your favorite color (red, green, or blue)");
-        String color = userInput.nextLine();
+        String color = userInput.nextLine().toLowerCase();
         System.out.println("Enter your favorite season (fall, spring, winter, summer)");
-        String season = userInput.nextLine();
+        String season = userInput.nextLine().toLowerCase();
         System.out.println("Enter your name");
-        String name = userInput.nextLine();
+        String name = userInput.nextLine().toLowerCase();
         
-        if(color.toLowerCase() == "red"){
+        if((color.equals("blue")) &&(season.equals("fall"))){
+            //System.out.println(aligator);
+        }
+        /*if(color.toLowerCase() == "red"){
             if("aeiou".indexOf(name.substring(0,1).toLowerCase()) >= 0){
                 System.out.println("You got a Porcupine!");
             } else{
@@ -33,7 +36,7 @@ public class PetSelector{
         } else {
             System.out.println("You got a rock!");
         }
-    userInput.close();
+    userInput.close(); */
     }
 
 }
