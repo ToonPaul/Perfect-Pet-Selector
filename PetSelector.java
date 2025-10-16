@@ -5,8 +5,8 @@ public class PetSelector{
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter your favorite color (red, green, or blue)");
         String color = userInput.nextLine();
-        String season;
-        String name;
+        String season = userInput.nextLine();
+        String name = userInput.nextLine();
         
         if(color.toLowerCase() == "red"){
             if("aeiou".indexOf(name.substring(0,1).toLowerCase()) >= 0){
@@ -16,16 +16,20 @@ public class PetSelector{
             }
         } else if (color.toLowerCase() == "blue"){
             if(season == "fall"){
-                //alligator
+                System.out.println("You got a alligator!");
             } else if (season == "spring"){
-                //ostrich
+                System.out.println("You got a ostrich!");
             } else {
-                //axolotl
+                System.out.println("You got a axolotl!");
             }
         } else if (color.toLowerCase() == "green"){
-
+            if("bcdfghjklmnpqrstvwxz".indexOf(name.substring(0,1).toLowerCase()) >= 0){
+                System.out.println("You got a giraffe!");
+            } else if((season.equals ("winter") || (season.equals("summer")) || (season.equals("spring")))){
+                System.out.println("You got a dog!");
+            }
         } else {
-            System.out.println("Invalid input, please try again");
+            System.out.println("You got a rock!");
         }
 
         //System.out.println(color);
