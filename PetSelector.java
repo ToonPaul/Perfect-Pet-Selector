@@ -5,7 +5,9 @@ public class PetSelector{
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter your favorite color (red, green, or blue)");
         String color = userInput.nextLine();
+        System.out.println("Enter your favorite season (fall, spring, winter, summer)");
         String season = userInput.nextLine();
+        System.out.println("Enter your name");
         String name = userInput.nextLine();
         
         if(color.toLowerCase() == "red"){
@@ -31,13 +33,7 @@ public class PetSelector{
         } else {
             System.out.println("You got a rock!");
         }
-
-        //System.out.println(color);
-        //System.out.println(season);
-        //System.out.println(name);
-        //make sure the input is valid (Idiot proof)
-        //make a decision
-        //tell the user waht they get
+    userInput.close();
     }
 
 }
